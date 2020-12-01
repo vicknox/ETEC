@@ -1,0 +1,743 @@
+.dropbtn{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 1 1px rgba(1, 1, 1, 1);
+    backface-visibility: visible;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    border-radius: 3px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus,
+.dropbtn:active {
+    transform: scale(1.1);
+}
+}
+.dropbtn:hover {
+    background-color: #333333;
+}
+
+.dropbtn:active { 
+    background-color: rgba(1, 1, 1, 0.3);
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgba(1, 1, 1, 0) ;
+    color: white;
+    padding: 10px 80px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 3px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #f1f1f1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(1, 1, 1, 0.9)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: rgba(1, 1, 1, 0.3);
+}
+/* 
+GERAL
+*/
+
+body{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;   
+}
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgba(1, 1, 1, 0.3);
+    font-size: 20px;
+    border-radius: 3px;
+    width: 10%;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f1f1f1;
+    
+    
+    
+
+}
+/*
+SLIDER
+*/
+header > .slider {
+     display: block;
+     height: 293px;
+     width: 600px;
+     margin: 0 auto;
+     margin-top: 20px;
+     position: relative;
+ }
+
+ header > .slider li {
+     list-style: none;
+     position: absolute;
+     width: 600px;
+ }
+
+ header > .slider img {
+     margin: 1px;
+     height: 50%;
+     width: 50%;
+     vertical-align: top;
+ }
+
+header > .slider input {
+    display: none;
+}
+
+header > .slider label {
+     background-color: #000;
+     bottom: 0px;
+     cursor: pointer;
+     display: block;
+     height: 6px;
+     position: absolute;
+     width: 10px;
+     z-index: 10;
+ }
+
+ header > .slider li:nth-child(1) label {
+     left: 10px;
+ }
+
+header > .slider li:nth-child(2) label {
+     left: 40px;
+ }
+
+ header > .slider li:nth-child(3) label {
+     left: 70px;
+}
+
+header > .slider img {
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ header >.slider li input:checked ~ img {
+     opacity: 1;
+     visibility: visible;
+     z-index: 10;
+ } 
+
+
+
+/*
+NAVEGAÇÃO
+*/
+
+nav ul li{
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 1 1px rgba(1, 1, 1, 1);
+    backface-visibility: visible;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    border-radius: 3px;
+}
+
+nav li:hover,
+nav li:focus,
+nav li:active {
+    transform: scale(1.1);
+}
+}
+nav li:active {
+    background-color: #333333;
+}
+
+nav li:hover { 
+    background-color: rgba(1, 1, 1, 0.3);
+}
+
+nav{
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(1,1,1,1), rgba(1,1,1,0)), url(http://foo.com/image.jpg);
+    border-bottom: ;
+    border-bottom-color: rgba(1, 1, 1, 0.3);
+    padding-top: 10px;
+    
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Roboto Slab", serif; 
+
+}
+
+nav ul {
+    border-radius: 10px;
+    background-color: rgba(1, 1, 1, 0);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "Roboto Slab", serif;
+
+}
+
+nav ul li  {
+    text-align: center;
+    width: 100%; 
+    
+}
+nav ul li a  {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;  
+}
+
+
+/*
+CABEÇALHO
+*/
+
+header {
+    
+    
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgba(1, 1, 1, 0.3);
+    background-image: url(e4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 60px;
+    padding-bottom: 250px;
+    
+}
+
+header p {
+    margin-bottom: 2em;
+    font-family: "Roboto Slab", serif; 
+    
+}
+/*
+SOBRE
+*/
+
+#sobre {
+    border-bottom-style: ;
+    border-color: white;
+    background-clip: border-box;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 100px ;
+    background-color: #1d1d1d;
+    color: #f1f1f1;
+    background: 
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    
+}
+
+
+#sobre .botao {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+}
+.botao {    
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 1 1px rgba(1, 1, 1, 1);
+    backface-visibility: visible;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.botao:hover,
+.botao:focus,
+.botao:active {
+    transform: scale(1.1);
+}
+}
+.botao:hover {
+    background-color: #333333;
+}
+
+.botao:active { 
+    background-color: #595959;
+
+}
+
+
+
+/*
+COSMOGONIA
+*/
+
+#Cosmogonia {
+    
+    border-bottom-style:solid;
+    border-color: rgba(1, 1, 1, 0.3);
+    background-image: url(cosmo.jpg);
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 300px ;
+    background-color: #1d1d1d;
+    color: #f1f1f1;
+
+    
+}
+
+#Cosmogonia p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+    
+}
+
+#Cosmogonia .botao {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+    
+}
+
+/*
+Big Bang
+*/
+#Big img { 
+    border: ;
+    border-radius:;
+    
+}
+#Big {
+    
+    border-bottom-style: ;
+    border-color: white;
+    background-image: url(bigbang.jpeg);
+    background-clip: border-box;
+    background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 300px ;
+    background-color: #1d1d1d;
+    color: #f1f1f1;
+}
+
+#Big h2 {
+    color: #1d1d1d;
+    
+}
+#Big p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+    
+}
+
+#Big .botao {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+    
+}
+
+#Big img {
+    
+    float: left;
+    padding-right: 20px;
+}
+
+/*
+Estrelas
+*/
+
+#Estrelas {
+    
+    line-height: 30px;
+    border-bottom-style: ;
+    border-color: white;
+    background-image: url(planetas.jpg);
+    background-clip: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 300px ;
+    background-color: #001e3a;
+    color: #f1f1f1;
+}
+
+#Estrelas p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+    
+    
+}
+
+#Estrelas .botao {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+    
+}
+
+
+
+/*
+TERRA
+*/
+
+#Terra {
+    line-height: 30px;
+    border-bottom-style: ;
+    border-color: white;
+    background-image: url(earth.jpg);
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 150px ;
+    background-color: #001e3a;
+    color: #f1f1f1;
+
+}
+
+#Terra p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+}
+
+/*
+Origem
+*/
+
+#OrigemTerra {
+    
+    line-height: 30px;
+    border-bottom-style: ;
+    border-color: white;
+    background-image: url(earth.jpg);
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 450px ;
+    background-color: #001e3a;
+    color: #f1f1f1;
+}
+
+#OrigemTerra p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+}
+
+
+
+
+/*
+VIDA
+*/
+
+#Vida {
+    
+    line-height: 30px;
+    border-bottom-style: ;
+    border-color: white;
+    background-image: url(vida.jpg);
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 200px ;
+    background-color: #001e3a;
+    color: #f1f1f1;
+}
+
+#Vida p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+}
+
+/*
+VIDA
+*/
+
+#bio {
+    
+    line-height: 30px;
+    border-bottom-style: ;
+    border-color: white;
+    background-image: url(vida.jpg);
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 200px ;
+    background-color: #001e3a;
+    color: #f1f1f1;
+}
+
+#bio p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+}
+
+/*
+VIDA
+*/
+
+#vidaterra {
+    
+    line-height: 30px;
+    border-bottom-style: ;
+    border-color: white;
+    background-image: url(vida.jpg);
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 200px ;
+    background-color: #001e3a;
+    color: #f1f1f1;
+}
+
+#vidaterra p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px;
+    padding: 20px
+}
+
+
+
+
+/*
+FOOTER
+*/
+
+footer {
+    background-image: url( big.jpg);
+    text-align: center;
+    padding: 10px;
+    background:linear-gradient(to bottom,  #1d1d1d, rgba(1,1,1,1)), url(http://foo.com/image.jpg);;
+    color: #f1f1f1;
+}
+
+
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+    /*
+    NAVEGAÇÃO   
+    */
+        nav {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        nav ul {
+            flex-direction: row;
+            width: 70%;
+        }
+    /*
+    CABECALHO   
+    */
+    
+        header {
+            height: 600px;
+            height: 60vh;
+            justify-content: center;
+        }
+    /*
+    SOBRE
+    */  
+        #sobre {
+            height: 250px;
+            height: 38bvh;
+            justify-content: center;
+            min-height: 250px;
+        }
+    /*
+    SERVIÇOS
+    */ 
+    
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    /*
+    PORTFOLIO   
+    */
+    
+    #portfolio{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        
+    #portfolio h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #portfolio img {
+        width: 33.333333333%;
+    }
+    
+    /*
+    CONTATO  
+    */
+    
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #contato h2,
+    #contato p { 
+        width: 100%;
+    }
+}
+
+
+
+
